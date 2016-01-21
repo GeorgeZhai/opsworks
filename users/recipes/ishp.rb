@@ -10,13 +10,13 @@ testuser2 = {
    'id' => 'testuser2',
    'password' => '$1$5cE1rI/9$4p0fomh9U4kAI23qUlZVv/',
    'ssh_keys' =>[
-      'ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSU\nGPl+nafzlHDTYW7hdI4yZ5ew18JH4JW9jbhUFrviQzM7xlELEVf4h9lFX5QVkbPppSwg0cda3\nPbv7kOdJ/MTyBlWXFCR+HAo3FXRitBqxiX1nKhXpHAZsMciLq8V6RjsNAQwdsdMFvSlVK/7XA\nt3FaoJoAsncM1Q9x5+3V0Ww68/eIFmb1zuUFljQJKprrX88XypNDvjYNby6vw/Pb0rwert/En\nmZ+AW4OZPnTPI89ZPmVMLuayrD2cE86Z/il8b+gw3r3+1nKatmIkjn2so1d01QraTlMqVSsbx\nNrRFi9wrf+M7Q== chefuser@mylaptop.local'
+      'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhOrBIOQF0Vtg/eLxBAwetDHLx9AezSBjfhsby2lEUVxoUrnjmD12XMB3R07KVkyFtssccq4bTZ7Yb9eH34T20CbaQT0MIWDUFw0Zm5xRVXCy9XiblYbZBKWuXHhW4tKKYvDT5Hxb+ubR2rhPlSRUD9faD0YhzJMJiV4vUvCpwxEUyy2ekNtThaScHdGtstG0c78M2r6P7y+5ayNzdd/Z7isMrZVRW8t5BagXSE5pxVYmTK5stL+9QhXKgbgvIcb1MAovdARGd0SU/2F2q/UvErGQm1FPrKqFDfEb8TGRT3d7H73hDFAEW1xxKYlA1QqN/YR0cblW9i9rE6kDGeHc/ OpenShift-Key'
    ],
    'groups' =>[
-      'testgroup'
+      'ishp'
    ],
    'uid' => 9002,
-   'shell' => '\/bin\/bash',
+   'shell' => '/bin/bash',
    'comment' => 'Test User'
 }
 
