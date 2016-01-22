@@ -56,8 +56,8 @@ testuser3 = {
 
 
 databag_item = Chef::DataBagItem.new
-databag_item.data_bag('userlist1')
-databag_item.raw_data = testuser2
+databag_item.data_bag('users')
+databag_item.raw_data = testuser3
 databag_item.save
 
 
