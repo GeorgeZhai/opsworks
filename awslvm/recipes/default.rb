@@ -33,6 +33,11 @@ lvm_volume_group 'vgdata' do
   physical_volumes ['/dev/xvdi']
 end
 
+lvm_logical_volume 'lvswap' do
+  group 'vgdata'
+  size '8G'
+end
+
 lvm_logical_volume 'lvdata' do
   group 'vgdata'
   size '30%VG'
@@ -47,9 +52,11 @@ lvm_logical_volume 'lvtmp' do
   mount_point '/tmp'
 end
 
-lvm_logical_volume 'lvhome' do
-  group 'vgdata'
-  size '15%VG'
-  filesystem 'ext3'
-  mount_point '/home'
-end
+
+
+#lvm_logical_volume 'lvhome' do
+#  group 'vgdata'
+#  size '15%VG'
+#  filesystem 'ext3'
+#  mount_point '/home'
+#end
