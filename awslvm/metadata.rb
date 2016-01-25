@@ -5,3 +5,5 @@ license          'All rights reserved'
 description      'Installs/Configures awslvm'
 long_description 'Installs/Configures awslvm'
 version          '0.1.0'
+
+depends	"lvm"

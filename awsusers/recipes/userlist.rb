@@ -1,4 +1,6 @@
-include_recipe "users"
+# sample of wrapping community recipes
+
+# include_recipe "users"
 
 require 'chef/data_bag'
 
@@ -9,7 +11,7 @@ unless Chef::DataBag.list.key?('userlist')
 end
 
 
-
+# sample of manage databag from recipe
 gzhai1 = {
    'id' => 'gzhai1',
    'password' => '$1$KONE7isU$HQiCaYsPnU6hsuCSS9Zco/',

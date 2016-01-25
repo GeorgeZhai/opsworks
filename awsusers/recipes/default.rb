@@ -6,7 +6,8 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-include_recipe "users"
+
+#include_recipe "users"
 
 
 # Sample of execute a command
