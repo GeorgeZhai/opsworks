@@ -8,19 +8,26 @@
 #
 include_recipe "users"
 
-execute "touch file" do
-  command "touch /data/hahaha.txt"
-end
 
-package 'nginx' do
-  action :install
-end
+# Sample of execute a command
+#execute "touch file" do
+#  command "touch /data/hahaha.txt"
+#end
 
-service 'nginx' do
-  action [ :enable, :start ]
-end
+# Sample of install a software package
+#package 'nginx' do
+#  action :install
+#end
 
-cookbook_file "/usr/share/nginx/html/index.html" do
-  source "index.html"
-  mode "0644"
-end
+# Sample of manage a service
+
+#service 'nginx' do
+#  action [ :enable, :start ]
+#end
+
+# Sample of manage a file
+
+#cookbook_file "/usr/share/nginx/html/index.html" do
+#  source "index.html"
+#  mode "0644"
+#end
