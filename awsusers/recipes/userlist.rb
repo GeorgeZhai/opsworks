@@ -12,8 +12,8 @@ end
 
 
 # sample of manage databag from recipe
-gzhai1 = {
-   'id' => 'gzhai1',
+gzhai = {
+   'id' => 'gzhai2',
    'password' => '$1$KONE7isU$HQiCaYsPnU6hsuCSS9Zco/',
    'ssh_keys' =>[
       'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDhOrBIOQF0Vtg/eLxBAwetDHLx9AezSBjfhsby2lEUVxoUrnjmD12XMB3R07KVkyFtssccq4bTZ7Yb9eH34T20CbaQT0MIWDUFw0Zm5xRVXCy9XiblYbZBKWuXHhW4tKKYvDT5Hxb+ubR2rhPlSRUD9faD0YhzJMJiV4vUvCpwxEUyy2ekNtThaScHdGtstG0c78M2r6P7y+5ayNzdd/Z7isMrZVRW8t5BagXSE5pxVYmTK5stL+9QhXKgbgvIcb1MAovdARGd0SU/2F2q/UvErGQm1FPrKqFDfEb8TGRT3d7H73hDFAEW1xxKYlA1QqN/YR0cblW9i9rE6kDGeHc/ OpenShift-Key'
@@ -22,16 +22,16 @@ gzhai1 = {
       'sysadmin',
       'esb',      
    ],
-   'uid' => 9003,
+   'uid' => 9004,
    'shell' => '/bin/bash',
-   'comment' => 'gzhai1'
+   'comment' => 'gzhai2'
 }
 
 
 
 databag_item = Chef::DataBagItem.new
 databag_item.data_bag('userlist')
-databag_item.raw_data = gzhai1
+databag_item.raw_data = gzhai
 databag_item.save
 
 
