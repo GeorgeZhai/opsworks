@@ -20,7 +20,7 @@ gzhai1 = {
       'sysadmin',
       'esb',      
    ],
-   'uid' => 9002,
+   'uid' => 9003,
    'shell' => '/bin/bash',
    'comment' => 'gzhai1'
 }
