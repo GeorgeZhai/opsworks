@@ -29,13 +29,27 @@ lvm_physical_volume '/dev/xvdi' do
 
 
 
-lvm_volume_group 'vg-data' do
+lvm_volume_group 'vgdata' do
   physical_volumes ['/dev/xvdi']
 end
 
-lvm_logical_volume 'lv-data' do
-  group 'vg-data'
-  size '50%VG'
+lvm_logical_volume 'lvdata' do
+  group 'vgdata'
+  size '30%VG'
   filesystem 'ext3'
   mount_point '/data'
+end
+
+lvm_logical_volume 'lvtmp' do
+  group 'vgdata'
+  size '5%VG'
+  filesystem 'ext3'
+  mount_point '/tmp'
+end
+
+lvm_logical_volume 'lvhome' do
+  group 'vgdata'
+  size '15%VG'
+  filesystem 'ext3'
+  mount_point '/home'
 end
