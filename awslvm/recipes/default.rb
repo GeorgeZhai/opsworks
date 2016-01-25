@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-# include_recipe "lvm"
+include_recipe "lvm::default"
 
 
 lvm_physical_volume '/dev/xvdi'
