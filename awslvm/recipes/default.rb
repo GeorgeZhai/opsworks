@@ -22,7 +22,9 @@ end
 Chef::Log.info "finished umount /data ...."
 
 
-lvm_physical_volume '/dev/xvdi'
+lvm_physical_volume '/dev/xvdi' do
+    wipe_signatures true
+  end
 
 lvm_volume_group 'vg00' do
   physical_volumes ['/dev/xvdi']
