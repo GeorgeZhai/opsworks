@@ -17,6 +17,7 @@ Chef::Log.info "start umount /data ...."
 # umount /data first
 execute "umount /data" do
   command "umount /data >>/dev/null 2>&1"
+  ignore_failure true
 end
 
 Chef::Log.info "finished umount /data ...."
