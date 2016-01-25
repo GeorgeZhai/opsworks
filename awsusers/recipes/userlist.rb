@@ -1,5 +1,7 @@
 # sample of wrapping community recipes
 
+
+# do not need to include_recipe, depends added in metadata.rb already
 # include_recipe "users"
 
 require 'chef/data_bag'
