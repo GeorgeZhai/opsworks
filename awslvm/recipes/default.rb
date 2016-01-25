@@ -16,7 +16,7 @@ Chef::Log.info "start umount /data ...."
 
 # umount /data first
 execute "umount /data" do
-  command "umount /data"
+  command "umount /data >>/dev/null 2>&1"
 end
 
 Chef::Log.info "finished umount /data ...."
