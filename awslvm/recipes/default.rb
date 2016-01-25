@@ -26,23 +26,15 @@ lvm_physical_volume '/dev/xvdi' do
     wipe_signatures true
   end
 
-lvm_volume_group 'vg00' do
-  physical_volumes ['/dev/xvdi']
 
-  logical_volume 'home' do
-    size        '25%VG'
-    filesystem  'ext4'
-    mount_point '/test'
-    stripes     3
-    mirrors     2
-  end
+
+lvm_volume_group 'vg-data' do
+  physical_volumes ['/dev/xvdi']
 end
 
-lvm_logical_volume 'home' do
-  group       'vg00'
-  size        '25%VG'
-  filesystem  'ext4'
-  mount_point '/test'
-  stripes     3
-  mirrors     2
+lvm_logical_volume 'lv-data' do
+  group 'vg-data'
+  size '50%VG'
+  filesystem 'ext3'
+  mount_point '/data'
 end
