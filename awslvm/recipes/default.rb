@@ -10,6 +10,18 @@
 include_recipe "lvm::default"
 
 
+
+Chef::Log.info "start umount /data ...."
+
+
+# umount /data first
+execute "umount /data" do
+  command "umount /data"
+end
+
+Chef::Log.info "finished umount /data ...."
+
+
 lvm_physical_volume '/dev/xvdi'
 
 lvm_volume_group 'vg00' do
